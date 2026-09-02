@@ -1,21 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de Alunos</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
-    <input id="nome" type="text" placeholder="Digite o nome">
 
-<button id="btnCadastrar">
-    Cadastrar
-</button>
+    <h1>Cadastro de Alunos</h1>
 
-<ul id="listaAlunos"></ul>
+    <h2>Informações do aluno</h2>
+
+    <p id="nome"></p>
+    <p id="idade"></p>
+    <p id="curso"></p>
+
+    <h2>Cadastro</h2>
+
+    <label for="nomeAluno">Nome:</label>
+    <input 
+        id="nomeAluno" 
+        type="text" 
+        placeholder="Digite o nome do aluno"
+    >
+
+    <br><br>
+
+    <label for="idadeAluno">Idade:</label>
+    <input 
+        id="idadeAluno" 
+        type="number" 
+        placeholder="Digite a idade"
+    >
+
+    <br><br>
+
+    <button id="btnCadastrar">Cadastrar</button>
 
     <h2>Lista de alunos</h2>
+
     <ul id="listaAlunos"></ul>
 
+    <h2>Resultado</h2>
+
+    <p id="resultado"></p>
+
+    <script src="script.js"></script>
+
 </body>
-<script src="script.js"></script>
 </html>
