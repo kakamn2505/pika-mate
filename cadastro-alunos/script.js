@@ -1,11 +1,7 @@
-console.log("Sistema iniciado!");
+let alunos = ["João", "Maria", "Pedro", "Pietro", "Kayke", "Daniel"];
 
-let nome = "Kayke";
-let idade = 18;
-let curso = "Informática";
-document.getElementById("idade").textContent = idade;
-document.getElementById("curso").textContent = curso;
-document.getElementById("nome").textContent = nome;
-console.log(nome);
-console.log(idade);
-console.log(curso);
+let lista = document.getElementById("listaAlunos");
+
+for (let i = 0; i < alunos.length; i++) {
+    lista.innerHTML += `<li>${alunos[i]}</li>`;
+}
